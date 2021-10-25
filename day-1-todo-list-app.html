@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Todo List</title>
+		<link rel="stylesheet" href="stylesheet.css" />
+	</head>
+	<body>
+		<div class="todo-list-app">
+			<h1>To-Do List</h1>
+			<div class="checkbox-list">
+				<div class="checkbox-items hidden">
+					<div class="checkbox">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							class="checkbox-icon"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke="currentColor"
+						>
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								stroke-width="2"
+								d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+							/>
+						</svg>
+					</div>
+					<p class="checkbox-item"></p>
+
+					<div class="remove-item item-1" id="remove-item-1">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							class="remove-icon"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke="currentColor"
+						>
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								stroke-width="2"
+								d="M15 12H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
+							/>
+						</svg>
+					</div>
+				</div>
+				<!--
+
+				<div class="checkbox-items">
+					<div class="checkbox">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							class="checkbox-icon"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke="currentColor"
+						>
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								stroke-width="2"
+								d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+							/>
+						</svg>
+					</div>
+					<p class="checkbox-item">Item 2</p>
+					<div class="remove-item">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							class="remove-icon"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke="currentColor"
+						>
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								stroke-width="2"
+								d="M15 12H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
+							/>
+						</svg>
+					</div>
+				</div>
+
+				<div class="checkbox-items">
+					<div class="checkbox">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							class="checkbox-icon"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke="currentColor"
+						>
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								stroke-width="2"
+								d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+							/>
+						</svg>
+					</div>
+					<p class="checkbox-item">Item 3</p>
+					<div class="remove-item">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							class="remove-icon"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke="currentColor"
+						>
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								stroke-width="2"
+								d="M15 12H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
+							/>
+						</svg>
+					</div>
+				</div>
+
+				<div class="checkbox-items">
+					<div class="checkbox">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							class="checkbox-icon"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke="currentColor"
+						>
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								stroke-width="2"
+								d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+							/>
+						</svg>
+					</div>
+					<p class="checkbox-item">Item 4</p>
+					<div class="remove-item">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							class="remove-icon"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke="currentColor"
+						>
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								stroke-width="2"
+								d="M15 12H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
+							/>
+						</svg>
+					</div>
+				</div>
+
+				<div class="checkbox-items">
+					<div class="checkbox">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							class="checkbox-icon"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke="currentColor"
+						>
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								stroke-width="2"
+								d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+							/>
+						</svg>
+					</div>
+					<p class="checkbox-item">Item 5</p>
+					<div class="remove-item">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							class="remove-icon"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke="currentColor"
+						>
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								stroke-width="2"
+								d="M15 12H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
+							/>
+						</svg>
+					</div>
+				</div> -->
+			</div>
+
+			<h2 class="completed">Completed</h2>
+			<div class="completed-list">
+				<!--
+				<div class="checkbox-completed-items">
+					<div class="checkbox-completed">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							class="checkbox-completed-icon"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke="currentColor"
+						>
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								stroke-width="2"
+								d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+							/>
+						</svg>
+					</div>
+					<p class="checkbox-completed-item">Item 6</p>
+					<div class="remove-completed-item">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							class="remove-completed-icon"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke="currentColor"
+						>
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								stroke-width="2"
+								d="M15 12H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
+							/>
+						</svg>
+					</div>
+				</div> 
+        <!--
+
+				<div class="checkbox-completed-items">
+					<div class="checkbox-completed">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							class="checkbox-completed-icon"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke="currentColor"
+						>
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								stroke-width="2"
+								d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+							/>
+						</svg>
+					</div>
+					<p class="checkbox-completed-item">Item 7</p>
+					<div class="remove-completed-item">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							class="remove-completed-icon"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke="currentColor"
+						>
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								stroke-width="2"
+								d="M15 12H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
+							/>
+						</svg>
+					</div>
+
+					<div class="checkbox-completed-items">
+						<div class="checkbox-completed">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								class="checkbox-completed-icon"
+								fill="none"
+								viewBox="0 0 24 24"
+								stroke="currentColor"
+							>
+								<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									stroke-width="2"
+									d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+								/>
+							</svg>
+						</div>
+						<p class="checkbox-completed-item">Item 8</p>
+						<div class="remove-completed-item">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								class="remove-completed-icon"
+								fill="none"
+								viewBox="0 0 24 24"
+								stroke="currentColor"
+							>
+								<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									stroke-width="2"
+									d="M15 12H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
+								/>
+							</svg>
+						</div>
+					</div>
+				</div>
+				-->
+			</div>
+
+			<div class="add-item">
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					class="add-item-icon"
+					fill="none"
+					viewBox="0 0 24 24"
+					stroke="currentColor"
+				>
+					<path
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						stroke-width="2"
+						d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
+					/>
+				</svg>
+			</div>
+		</div>
+		<script src="script.js"></script>
+	</body>
+</html>

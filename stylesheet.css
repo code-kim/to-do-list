@@ -1,0 +1,140 @@
+html {
+	font-size: 62.5%;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: monospace;
+	color: #333;
+	font-size: 1.8rem;
+}
+
+.todo-list-app {
+	max-width: 500px;
+	margin: 9.6rem auto;
+	padding: 6.4rem;
+	background-color: #f8f9fa;
+	border: 0.5px solid #ced4da;
+	border-radius: 16px;
+	box-shadow: 0 0 5px #ced4da;
+	position: relative;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 2.4rem;
+}
+
+h1 {
+	font-size: 4.2rem;
+	color: #f8f9fa;
+	background-color: #1971c2;
+	padding: 1.2rem 6.4rem;
+	border-radius: 12px;
+	border: 1px solid #1864ab;
+	filter: drop-shadow(0 0 5px #ced4da);
+	/* position: relative; */
+}
+
+ul {
+	list-style: none;
+	font-size: 2.4rem;
+}
+
+.completed {
+	font-size: 3rem;
+	letter-spacing: 0.75px;
+}
+
+.completed-list,
+.checkbox-list {
+	display: flex;
+	flex-direction: column;
+	gap: 1.2rem;
+}
+
+.checkbox-items,
+.checkbox-completed-items {
+	display: flex;
+	align-items: center;
+	gap: 16px;
+}
+
+.hidden {
+	display: none;
+}
+
+.checkbox {
+	display: flex;
+	align-items: center;
+	color: #40c057;
+	transition: all 1s;
+}
+
+.checkbox:hover,
+.checkbox:active {
+	color: #2f9e44;
+}
+
+.checkbox-icon,
+.checkbox-completed-icon {
+	width: 20px;
+	height: 20px;
+}
+
+.remove-item {
+	display: flex;
+	align-items: center;
+}
+
+.remove-icon {
+	width: 20px;
+	height: 20px;
+	stroke: #d6336c;
+	transition: all 1.5s;
+}
+
+.remove-item:hover .remove-icon {
+	stroke: #a61e4d;
+}
+
+.checkbox-completed-items {
+	color: #777;
+}
+
+.remove-completed-item {
+	display: flex;
+	align-items: center;
+}
+
+.remove-completed-icon {
+	width: 20px;
+	height: 20px;
+}
+
+.add-item {
+	/* position: absolute; */
+	/* left: 4%;
+  bottom: 4%; */
+	align-self: flex-start;
+	transition: all 1.5s;
+}
+
+.add-item:hover .add-item-icon {
+	stroke: #1864ab;
+	filter: drop-shadow(0 0 0 #fff);
+	cursor: pointer;
+}
+
+.add-item-icon {
+	height: 4.8rem;
+	width: 4.8rem;
+	stroke: #1971c2;
+	fill: #f1f3f5;
+	filter: drop-shadow(0 0 2px #ced4da);
+}
